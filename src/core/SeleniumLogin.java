@@ -21,6 +21,8 @@ public class SeleniumLogin {
 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
 		driver.findElement(By.id("btnLogin")).click();
 		
+		
+		
 	}
 
 }
