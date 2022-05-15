@@ -21,15 +21,26 @@ public class LocatorsInSelenium {
 		
 		//xPath
 		// - //tagname[@attribut='attribute Value']
-		WebElement userName = driver.findElement(By.xpath("//input[@name='txtUsername']"));
-		userName.sendKeys("Admin");
+//		WebElement userName = driver.findElement(By.xpath("//input[@name='txtUsername']"));
+//		userName.sendKeys("Admin");
+//		
+//		WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
+//		password.sendKeys("admin123");
+//		
+//		WebElement loginButton = driver.findElement(By.xpath("//input[@class='button']"));
+//		loginButton.click();
 		
-		WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
-		password.sendKeys("admin123");
+		WebElement forgetPassword = driver.findElement(By.linkText("Forgot your password?"));
+		forgetPassword.click();
 		
-		WebElement loginButton = driver.findElement(By.xpath("//input[@class='button']"));
-		loginButton.click();
+		WebElement reUserName = driver.findElement(By.xpath("//input[@name='securityAuthentication[userName]']"));
+		reUserName.sendKeys("Admin");
 		
+		WebElement cancelButton = driver.findElement(By.xpath("//input[@id='btnCancel']"));
+		cancelButton.click();
+//		
+//		WebElement resetButton = driver.findElement(By.xpath("//input[@value='Reset Password']"));
+//		resetButton.click();
 		
 		
 		
